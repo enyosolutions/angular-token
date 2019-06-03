@@ -88,7 +88,8 @@ export interface AngularTokenOptions {
   registerAccountCallback?:   string;
 
   updatePasswordPath?:        string;
-
+  updateAccountPath?:        string;
+  
   resetPasswordPath?:         string;
   resetPasswordCallback?:     string;
 
