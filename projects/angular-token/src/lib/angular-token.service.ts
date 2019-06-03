@@ -110,6 +110,7 @@ export class AngularTokenService implements CanActivate {
       registerAccountCallback:    this.global.location.href,
 
       updatePasswordPath:         'auth',
+      updateAccountPath:          'auth',
 
       resetPasswordPath:          'auth/password',
       resetPasswordCallback:      this.global.location.href,
