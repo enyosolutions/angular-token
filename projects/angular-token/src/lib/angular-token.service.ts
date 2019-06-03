@@ -214,6 +214,12 @@ export class AngularTokenService implements CanActivate {
     return this.http.delete<ApiResponse>(this.getServerPath() + this.options.deleteAccountPath);
   }
 
+  // Update Account
+  updateAccount(data: any): Observable<ApiResponse> {
+    return this.http.post<ApiResponse>(this.getServerPath() + this.options.updateAccountPath, data);
+  }
+
+  
   // Sign in request and set storage
   signIn(signInData: SignInData, additionalData?: any): Observable<ApiResponse> {
     this.userType.next((signInData.userType == null) ? null : this.getUserTypeByName(signInData.userType));
